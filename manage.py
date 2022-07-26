@@ -22,6 +22,17 @@ GIT REpository
 cd directory to which is used to do version control
 git init
 git add . (every time you make changes)
+if first_time:
+    git config --global user.email "engr.mohsinq@gmail.com"
+    git config --global user.name "MohsinQuddus"
+else:
+    git commit -m "Initial Commit"
+heroku login    
+automatic login using browser
+heroku create 
+or
+heroku create "application name"
+sudo apt-get update && sudo apt-get upgrade heroku
 """
 
 #!/usr/bin/env python
