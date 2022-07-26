@@ -33,6 +33,7 @@ heroku create
 or
 heroku create "application name"
 sudo apt-get update && sudo apt-get upgrade heroku
+git remote add origin https://github.com/mohsinquddus/Django_Projects
 """
 
 #!/usr/bin/env python
