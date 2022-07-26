@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+  <div class="container my-5 py-5 ">
+    <form method="post" action="/contacts/insert">
+      {%csrf_token%}
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" name='uname' placeholder="Mohsin">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="text" class="form-control" name='email' id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" name='pnumber' id="exampleFormControlInput1" placeholder="03xxxxxxxxx">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" name='desc' id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+    </form>
+  </div>
+{% endblock body %}
